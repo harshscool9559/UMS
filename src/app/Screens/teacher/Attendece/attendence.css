@@ -1,0 +1,29 @@
+@keyframes bgColorTransition {
+    0% { background-color: #e2e5ea; } /* Blue */
+    33% { background-color: #d5c8f2; } /* Purple */
+    66% { background-color: #f6e4e4; } /* Red */
+    100% { background-color: #d9dfea; } /* Back to Blue */
+  }
+  
+  @keyframes spinSlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(-10%); }
+    50% { transform: translateY(0); }
+  }
+  
+  .animate-bgColorTransition {
+    animation: bgColorTransition 3s linear infinite;
+  }
+  
+  .animate-spinSlow {
+    animation: spinSlow 2s linear infinite;
+  }
+  
+  .animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
